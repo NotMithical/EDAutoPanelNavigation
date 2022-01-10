@@ -1,0 +1,11 @@
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+; #Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+
+; reminder to replace needles with acutal unique placeholders and to update script setup.ahk with those unique needles.
+
+PixelSearch, MatchCoordX, MatchCoordY, NavNavTabCheckX1, NavNavTabCheckY1, NavNavTabCheckX1 + 2, NavNavTabCheckY1 + 2, NavNavTabCheckColor, 5
+	If ErrorLevel 0
+		Exit
+; oh hey there. just realizing the scripts that check if they're already on a tab and nothing else are redundant/useless, but whatever. i'll leave them in.
