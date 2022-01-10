@@ -5,6 +5,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; reminder to replace needles with acutal unique placeholders and to update script setup.ahk with those unique needles.
 
+Send, 1
+Sleep, 500
 PixelSearch, MatchCoordX, MatchCoordY, NavNavTabCheckX1, NavNavTabCheckY1, NavNavTabCheckX1 + 2, NavNavTabCheckY1 + 2, NavNavTabCheckColor, 5
 	If ErrorLevel 0
 		Exit
