@@ -7,6 +7,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 Send, 1
 Sleep, 500
-PixelSearch, MatchCoordX, MatchCoordY, ConConTabCheckX1, ConConTabCheckY1, ConConTabCheckX1 + 2, ConConTabCheckY1 + 2, ConConTabCheckColor, 5
+PixelSearch, MatchCoordX, MatchCoordY, ConConTabCheckX1, ConConTabCheckY1, ConConTabCheckX1 + ConConTabCheckPixelSearchDiameter, ConConTabCheckY1 + ConConTabCheckPixelSearchDiameter, ConConTabCheckColor, 5
 	If ErrorLevel 0
 		Exit

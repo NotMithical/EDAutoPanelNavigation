@@ -7,7 +7,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 Send, 1
 Sleep, 500
-PixelSearch, MatchCoordX, MatchCoordY, NavNavTabCheckX1, NavNavTabCheckY1, NavNavTabCheckX1 + 2, NavNavTabCheckY1 + 2, NavNavTabCheckColor, 5
+PixelSearch, MatchCoordX, MatchCoordY, NavNavTabCheckX1, NavNavTabCheckY1, NavNavTabCheckX1 + NavNavTabCheckPixelSearchDiameter, NavNavTabCheckY1 + NavNavTabCheckPixelSearchDiameter, NavNavTabCheckColor, 5
 	If ErrorLevel 0
 		Exit
 ; oh hey there. just realizing the scripts that check if they're already on a tab and nothing else are redundant/useless, but whatever. i'll leave them in.
