@@ -2,7 +2,6 @@
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
-CoordMode, Pixel Mouse, Screen
 MsgBox, 0, , This script is design to collect information on your game's resolution and colors in order to generate additional scripts. Press OK to continue.
 IfMsgBox OK
 {
@@ -21,19 +20,25 @@ IfMsgBox OK
 				IfMsgBox OK
 				MsgBox, , , Place your cursor over the highlighted navigation tab a short way to the left of the N. This window will automatically close in 15 seconds and get the location of your cursor as well as the color of the pixel at that location., 15
 				IfMsgBox TIMEOUT
+				CoordMode, Mouse, Screen
 				MouseGetPos, NavTabCoordX, NavTabCoordY
+				CoordMode, Pixel, Screen
 				PixelGetColor, NavTabColor, NavTabCoordX, NavTabCoordY, Slow
 				MsgBox, 0, , When you are ready, select the transaction tab and press OK
 				IfMsgBox OK
 				MsgBox, , , Place your cursor over the highlighted transaction tab a short way to the left of the T. This window will automatically close in 15 seconds and get the location of your cursor as well as the color of the pixel at that location., 15
 				IfMsgBox TIMEOUT
+				CoordMode, Mouse, Screen
 				MouseGetPos, TransactionTabCoordX, TransactionTabCoordY
+				CoordMode, Pixel, Screen
 				PixelGetColor, TransactionTabColor, TransactionTabCoordX, TransactionTabCoordY, Slow
 				MsgBox, 0, , When you are ready, select the contacts tab and press OK
 				IfMsgBox OK
 				MsgBox, , , Place your cursor over the highlighted contacts tab a short way to the left of the C. This window will automatically close in 15 seconds and get the location of your cursor as well as the color of the pixel at that location., 15
 				IfMsgBox TIMEOUT
+				CoordMode, Mouse, Screen
 				MouseGetPos, ConTabCoordX, ConTabCoordY
+				CoordMode, Pixel, Screen
 				PixelGetColor, ConTabColor, ConTabCoordX, ConTabCoordY, Slow
 				MsgBox, 0, , You may now close Elite Dangerous. When you have done so, press OK and the script will automatically use the collected data to generate new scripts.
 				IfMsgBox OK
