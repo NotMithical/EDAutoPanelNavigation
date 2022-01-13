@@ -107,7 +107,7 @@ IfMsgBox OK
 					FileDelete, %A_ScriptDir%\MainScripts\ConConTabCheck.txt
 					FileAppend, %ConConTabCheckContents%, %A_ScriptDir%\MainScripts\ConConTabCheck.txt
 				}
-				MsgBox, 0, , Script setup is now complete. Before using, you will have to manually change all .txt file extensions in %A_ScriptDir%\MainScripts to .ahk. Information on how to use these scripts is available at link. Press OK to exit. ; make sure to add the link here. probably the github page for this with a youtube video or something.
+				MsgBox, 0, , Script setup is now complete. Before using, you will have to manually change all .txt file extensions in %A_ScriptDir%\MainScripts to .ahk. Information on how to use these scripts is available at https://github.com/NotMithical/EDAutoPanelNavigation. Press OK to exit. ; make sure to add the link here. probably the github page for this with a youtube video or something.
 				IfMsgBox OK
 				ExitApp
 			}
