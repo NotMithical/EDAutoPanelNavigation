@@ -17,4 +17,4 @@ Reduce duration of Sleep as much as possible
 
 <strike>Overhaul setup to allow easier recalibration and to eliminate manual changing of file extensions</strike> Done!
 
-Remove unnecessary buttons and add images in setup steps
+<strike>Remove unnecessary buttons and add images in setup steps</strike> Done!
