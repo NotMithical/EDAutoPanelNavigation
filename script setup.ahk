@@ -19,24 +19,36 @@ IfMsgBox OK
 				PixelSearchDiameter := Round(PixelSearchDiameter)
 				MsgBox, 0, , If Elite Dangerous is not already running, launch it now. Once you are logged in, open the external panel to your left and select the navigation tab. Press OK once you have done this.
 				IfMsgBox OK
-				MsgBox, , , Place your cursor over the highlighted navigation tab a short way to the left of the N. This window will automatically close in 15 seconds and get the location of your cursor as well as the color of the pixel at that location., 15
-				IfMsgBox TIMEOUT
+				Gui, New
+				Gui, Add, Text, % " w"A_ScreenWidth/10, Place your cursor over the highlighted navigation tab a short way to the left of the N as shown below. This window will automatically close in 15 seconds and get the location of your cursor as well as the color of the pixel at that location.
+				Gui, Add, Picture, , %A_ScriptDir%\Images\NavigationTabExample.png
+				Gui, Show
+				Sleep, 15000
+				Gui, Destroy
 				CoordMode, Mouse, Screen
 				MouseGetPos, NavTabCoordX, NavTabCoordY
 				CoordMode, Pixel, Screen
 				PixelGetColor, NavTabColor, NavTabCoordX, NavTabCoordY, Slow
 				MsgBox, 0, , When you are ready, select the transaction tab and press OK
 				IfMsgBox OK
-				MsgBox, , , Place your cursor over the highlighted transaction tab a short way to the left of the T. This window will automatically close in 15 seconds and get the location of your cursor as well as the color of the pixel at that location., 15
-				IfMsgBox TIMEOUT
+				Gui, New
+				Gui, Add, Text, % " w"A_ScreenWidth/10, Place your cursor over the highlighted transaction tab a short way to the left of the T as shown below. This window will automatically close in 15 seconds and get the location of your cursor as well as the color of the pixel at that location.
+				Gui, Add, Picture, , %A_ScriptDir%\Images\TransactionsTabExample.png
+				Gui, Show
+				Sleep, 15000
+				Gui, Destroy
 				CoordMode, Mouse, Screen
 				MouseGetPos, TransactionTabCoordX, TransactionTabCoordY
 				CoordMode, Pixel, Screen
 				PixelGetColor, TransactionTabColor, TransactionTabCoordX, TransactionTabCoordY, Slow
 				MsgBox, 0, , When you are ready, select the contacts tab and press OK
 				IfMsgBox OK
-				MsgBox, , , Place your cursor over the highlighted contacts tab a short way to the left of the C. This window will automatically close in 15 seconds and get the location of your cursor as well as the color of the pixel at that location., 15
-				IfMsgBox TIMEOUT
+				Gui, New
+				Gui, Add, Text, % " w"A_ScreenWidth/10, Place your cursor over the highlighted contacts tab a short way to the left of the C as shown below. This window will automatically close in 15 seconds and get the location of your cursor as well as the color of the pixel at that location.
+				Gui, Add, Picture, , %A_ScriptDir%\Images\ContactsTabExample.png
+				Gui, Show
+				Sleep, 15000
+				Gui, Destroy
 				CoordMode, Mouse, Screen
 				MouseGetPos, ConTabCoordX, ConTabCoordY
 				CoordMode, Pixel, Screen
