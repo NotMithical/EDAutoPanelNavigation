@@ -11,7 +11,7 @@ To use these scripts, create a new voice command in your preferred software for 
 # To do
 Add support for all tabs
 
-Reduce duration of Sleep as much as possible
+<strike>Reduce duration of Sleep as much as possible</strike> Done!
 
 <strike>Simplify voice command integration to only require launching a single script per tab</strike> Done!
 
