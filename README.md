@@ -7,12 +7,13 @@ Once you have extracted the files to your desired location, running "script setu
 
 To use these scripts, create a new voice command in your preferred software for the tab you want to navigate to and set it to run the script that starts with the name of the desired tab. For example, to open the navigation tab, the voice command should launch "navigation tab.ahk"
 # To do
-Add support for all tabs
 
-<strike>Reduce duration of Sleep as much as possible</strike> Done!
+- [x] Reduce duration of Sleep as much as possible
 
-<strike>Simplify voice command integration to only require launching a single script per tab</strike> Done!
+- [x] Simplify voice command integration to only require launching a single script per tab
 
-<strike>Overhaul setup to allow easier recalibration and to eliminate manual changing of file extensions</strike> Done!
+- [x] Overhaul setup to allow easier recalibration and to eliminate manual changing of file extensions
 
-<strike>Remove unnecessary buttons and add images in setup steps</strike> Done!
+- [x] Remove unnecessary buttons and add images in setup steps
+
+- [ ] Add support for all tabs
